@@ -1,1 +1,2 @@
-id -u
+#!/bin/bash
+su -u
