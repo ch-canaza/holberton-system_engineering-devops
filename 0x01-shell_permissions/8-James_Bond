@@ -1,2 +1,2 @@
-#!/bin/assh
-chmod u-rwx=g-rwx=o+rwx
+#!/bin/bash
+chmor 111 hello
