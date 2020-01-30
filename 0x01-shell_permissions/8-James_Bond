@@ -1,2 +1,2 @@
-#!/bin/bas
+#!/bin/assh
 chmod u-rwx=g-rwx=o+rwx
