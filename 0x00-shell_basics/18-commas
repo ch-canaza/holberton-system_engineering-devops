@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -mpak1 
+ls -mpa
