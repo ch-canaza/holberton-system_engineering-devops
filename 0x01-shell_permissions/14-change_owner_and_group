@@ -1,2 +1,2 @@
 #!/bin/bash
-chown owner:betty group:holberton
+chown :betty:holberton
