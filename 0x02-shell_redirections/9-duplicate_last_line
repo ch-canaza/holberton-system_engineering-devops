@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n1 hello >> hello 
+tail -n1 iacta >> iacta 
