@@ -1,2 +1,2 @@
 #!/bin/bash
-DIR "$(find . -type d)"
+PATH "$(find . -type d wc)"
