@@ -1,0 +1,17 @@
+#!/bin/bash
+i=1;
+while ((i <= 20)); do
+    if [[ $i == 4 ]]; then
+    echo $i
+	echo 'bad luck from China'
+    elif [[ $i == 8 ]]; then
+    echo $i
+	echo 'bad luck from Japan'
+    elif [[ $i == 17 ]]; then
+    echo $i
+    echo 'bad luck from Italy'
+    else
+    echo $i
+    fi
+    let i++
+done
