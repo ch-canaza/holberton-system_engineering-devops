@@ -3,14 +3,14 @@
 # verify if  exist and have content
 
 FILE="holbertonschool"
-  if [[ -e "$FILE" ]]; then
+  if [ -e "$FILE" ]; then
     echo "holbertonschool file exists"
-    if [[ -s "$FILE" ]]; then
+    if [ -s "$FILE" ]; then
       echo "holbertonschool file is not empty"
     else
         echo "holbertonschool file is empty"
     fi
-    if [[ -n "$FILE" ]]; then
+    if [ -f "$FILE" ]; then
       echo "holbertonschool is a regular file"
     fi
   else
