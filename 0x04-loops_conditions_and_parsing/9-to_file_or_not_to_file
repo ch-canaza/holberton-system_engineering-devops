@@ -1,4 +1,7 @@
 #!/bin/bash
+# Bash script that gives you information about the holbertonschool file.
+# verify if  exist and have content
+
 FILE="holbertonschool"
   if [[ -e "$FILE" ]]; then
     echo "holbertonschool file exists"
@@ -10,6 +13,6 @@ FILE="holbertonschool"
     if [[ -n "$FILE" ]]; then
       echo "holbertonschool is a regular file"
     fi
-  else  
+  else
       echo "holbertonschool file does not exist"
   fi

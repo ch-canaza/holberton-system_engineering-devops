@@ -1,4 +1,6 @@
 #!/bin/bash
+# Bash script that displays Holberton School 10 times.
+
 i=20
 until [ $i -lt 11 ]; do
     echo "Holberton School"
