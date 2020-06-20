@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Bash script that gives you information about the holbertonschool file.
 # verify if  exist and have content
 

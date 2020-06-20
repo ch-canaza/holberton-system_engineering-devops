@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Bash script that displays Holberton School 10 times, but for
 #  the 9th iteration, displays Holberton School and then Hi on a new line.
 
