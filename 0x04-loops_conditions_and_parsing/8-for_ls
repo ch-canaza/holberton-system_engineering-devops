@@ -6,5 +6,5 @@
 # the first dash is displayed (refer to the example)
 
 for i in *; do
-    echo "$i"
+    echo "$i" | cut -d'-' -f2
 done
