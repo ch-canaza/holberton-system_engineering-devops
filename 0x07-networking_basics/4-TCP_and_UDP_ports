@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# script that shows listenning ports: PID, NAME of the program
+sudo netstat -lp
