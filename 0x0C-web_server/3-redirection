@@ -4,8 +4,8 @@
 #  Returns a page containing "Holberton School" when queried
 #  at the root with a curl GET request.
 
-sudo apt-get update
-sudo apt-get install -y nginx
+sudo apt-get-y update
+sudo apt-get -y install -y nginx
 sudo ufw allow 'Nginx HTTP'
 echo "Holberton School" > /var/www/html/index.html
 sed -i '/listen 80 default_server;/ a \\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
