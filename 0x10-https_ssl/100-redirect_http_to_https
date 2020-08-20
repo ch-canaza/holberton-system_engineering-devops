@@ -8,7 +8,7 @@ global
 	group haproxy
 	daemon
 
-	# Default SSL material locations
+	#Default SSL material locations
 	ca-base /etc/ssl/certs
 	crt-base /etc/ssl/private
 
@@ -34,11 +34,15 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-listen 1464-lb-01
+frontend http_front
 	bind *:80
-	bind *:443 ssl crt /etc/letsencrypt/live/www.nazang.tech-0001/fullchain.pem
+	bind *:443 ssl crt /etc/letsencrypt/live/www.nazang.tech/fullchain.pem
+	redirect scheme https code 301 if !{ ssl_fc }
+	stats uri /haproxy?stats
+	default_backend http_back
 	mode http
+	
+backend http_back
 	balance roundrobin
-	server 1464-web-01 35.231.195.75 check
-	server 1464-web-02 52.91.219.244 check
-	redirect scheme https if !{ ssl_fc }
+	server 1464-web-01 35.231.195.75:80 check
+	server 1464-web-02 52.91.219.244:80 check
