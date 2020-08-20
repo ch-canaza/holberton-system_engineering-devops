@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # script that changes the users name to nginx
-chmod +w /etc/nginx/nginx.conf
-var="user nginx;"
-sed -i "1s/.*/$var/" /etc/nginx/nginx.conf
+chmod 644 /etc/nginx/nginx.conf
+sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
 sed -i "'s/80 default_server/8080 default_server/' /etc/nginx/sites-available/default"
 pkill apahe2
 sudo -u nginx service nginx restart
