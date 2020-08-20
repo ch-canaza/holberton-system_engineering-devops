@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # script that changes the users name to nginx
-chmod +w /etc/nginx/nginx.conf
+sudo -u root chmod +w /etc/nginx/nginx.conf
 var="user nginxa;"
 sed -i "1s/.*/$var/" /etc/nginx/nginx.conf
 sudo service nginx restart
